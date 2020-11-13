@@ -1,0 +1,79 @@
+body {
+    margin: 0px; 
+    /* margin removes 8px margin that was being applied by the brower
+    so the navbar reaches fully across the page */
+}
+
+header {
+    border: 1px solid blue;
+    /* temporary just to see where its actually taking up space on the page */
+    /* when shrank down items do not stay inline, i'd rather them not wrap to next line */
+    padding-bottom: 6px;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    width: 45%;
+}
+
+#navbar-left {
+    display: inline-flex;
+    margin-right: auto;
+    flex: 0 50%;
+    justify-content: flex-start;
+}
+
+#navbar-right {
+    display: inline-flex;
+    margin-left: auto;
+    flex: 0 50%;
+    justify-content: flex-end;
+}
+
+#logo {
+    display: block;
+    width: 35%;
+    margin: auto;
+}
+
+#search-bar-container {
+    border: 1px solid grey;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 75%;
+    margin: auto;
+}
+/* Not working right yet, sizing issues on microphone and the items need to be snugged together */
+
+#two-buttons {
+    width: 40%;
+    margin: auto;
+}
+/* right button is wrapping to next line when minimized, shouldn't do that */
+
+
+#footer-left {
+    display: inline-flex;
+    margin-right: auto;
+    flex: 0 50%;
+    justify-content: flex-start;
+}
+
+footer {
+    border: 1px solid black;
+    /* temporary */
+    /* Items are not centered properly */
+    /* Needs to hug the bottom of the page */
+}
+
+#footer-right {
+    display: inline-flex;
+    margin-left: auto;
+    flex: 0 50%;
+    justify-content: flex-end;
+}
