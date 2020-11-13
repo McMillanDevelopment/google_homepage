@@ -1,0 +1,16 @@
+body {
+    margin: 0;
+}
+/* margin removes 8px margin that was being applied by the brower
+so the navbar reaches fully across the page */
+
+#search-bar-line {
+    display: flex;
+    flex-direction: row;
+}
+
+#tabs {
+    display: flex;
+    flex-direction: row;
+    
+}
